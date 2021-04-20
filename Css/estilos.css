@@ -1,4 +1,45 @@
 body{
-    background-color: black !important;
+    background-image: url("http://itectehuacan.edu.mx/TutoriasFinalSistema/Imagenes/backgrounds/1.jpg");
+
 }
-/*Estilos barra menu*/
+
+/*NAV BAR COLORS*/
+.color_letra{
+    color: #216DB4;
+}
+.color_letra2{
+    color: #216DB4;
+}
+.dropdown-menu{
+    background-color: white!important;
+}
+.dropdown-item{
+    color: #216DB4 !important;
+}
+.dropdown-item:hover{
+    color: white !important;
+    text-decoration: none !important;
+    background: #39B6EC !important;
+}
+.color_letra:hover{
+    color: white;
+    background: #39B6EC;
+    border-radius: 40px;
+    text-decoration: none;
+}
+.color_letra2:hover{
+    color: white;
+    background: #39B6EC;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 7px;
+}
+.item_select{
+    background-color: #39B6EC; 
+    color: white; 
+    border-radius: 40px;
+}
+.separacion_reg_ini{
+    padding-right: 10px;
+    padding-left: 10px;
+}
