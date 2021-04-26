@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+
+    <!--Boostrap4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--FontLato(Fuente productos)-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!--Importe de los estilos(css)-->
+    <link type="text/css" rel="stylesheet" href="Css/estilos.css">
+</head>
+
+<body>
+    <!--Inicio Barra Menu-->
+    <nav class="navbar navbar-expand-lg bg-light" style="padding-top: 0; padding-bottom: 0;">
+        <a class="navbar-brand" href="Home.html"><img src="Imagenes/logo 2.png" alt="Logo" width="50px"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <!--Opciones-->
+        <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link item_select" href="Home.html">Inicio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Fin Barra Menu-->
+    <div class="container texto_is" style="text-align: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-person-circle "
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+        </svg>
+        <p class="texto_is">Crea una cuenta para poder realizar compras, obtener ofertas y participar de futuros sorteos
+            que realice la página</p>
+        <form action="#" method="POST" name="inicio_sesion">
+            <div class="form-group">
+                <input type="email" class="form-control ingresar_texto" placeholder="Correo electronico" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control ingresar_texto" placeholder="Contraseña" required>
+            </div>
+            <div class="col-md-6">
+                <div class="form-check">
+                    <input type="checkbox" class="form-control" name="Recordarme" >
+
+                </div>
+            </div>
+            <div class="col-md-6">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
