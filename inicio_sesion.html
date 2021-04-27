@@ -21,7 +21,7 @@
 
 <body>
     <!--Inicio Barra Menu-->
-    <nav class="navbar navbar-expand-lg bg-light" style="padding-top: 0; padding-bottom: 0;">
+    <nav class="navbar navbar-expand-lg bg-light" style="padding-top: 0; padding-bottom: 0; margin-bottom: 5%;">
         <a class="navbar-brand" href="Home.html"><img src="Imagenes/logo 2.png" alt="Logo" width="50px"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
@@ -40,33 +40,52 @@
         </div>
     </nav>
     <!--Fin Barra Menu-->
+
     <div class="container texto_is" style="text-align: center;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-person-circle "
-            viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-            <path fill-rule="evenodd"
-                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-        </svg>
-        <p class="texto_is">Crea una cuenta para poder realizar compras, obtener ofertas y participar de futuros sorteos
-            que realice la página</p>
-        <form action="#" method="POST" name="inicio_sesion">
-            <div class="form-group">
-                <input type="email" class="form-control ingresar_texto" placeholder="Correo electronico" required>
+        <div class="row">
+            <div class="col-md-3">
             </div>
-            <div class="form-group">
-                <input type="password" class="form-control ingresar_texto" placeholder="Contraseña" required>
+            <div class="col-md-6" style="background-color: white; border: black solid 1px;">
+                <!--Icono de Inicio de Sesion-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
+                    class="bi bi-person-circle " viewBox="0 0 16 16" style="margin-top: 5%; margin-bottom: 2%;">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <!--Texto-->
+                <p class="texto_is">Crea una cuenta para poder realizar compras, obtener ofertas y participar de futuros
+                    sorteos que realice la página</p>
+                <form action="#" method="POST" name="inicio_sesion">
+                    <!--Ingresar Correo Electronico-->
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Correo electronico" required>
+                    </div>
+                    <!--Ingresar Contraseña-->
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Contraseña" required>
+                    </div>
+                    <!--Separar recuerdame y ¿olvidaste contraseña?-->
+                    <div class="row"  style="padding-bottom: 10px;">
+                        <div class="col-md-6 col-sm-12" style="padding-left: 30px; text-align: left;">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                              </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12" style="text-align: right;">
+                            <a href="#" class="texto_is" style="margin-bottom: 10px;">¿Olvidaste tu Contraseña?</a>
+                        </div>
+                    </div>
+                    <!--Boton Inicio Sesion-->
+                    <div class="form-group">
+                        <p><button type="submit" class="boton_is">Iniciar Sesión</button></p>
+                    </div>
+                </form>
             </div>
-            <div class="col-md-6">
-                <div class="form-check">
-                    <input type="checkbox" class="form-control" name="Recordarme" >
-
-                </div>
+            <div class="col-md-3">
             </div>
-            <div class="col-md-6">
-            </div>
-
-        </form>
-
+        </div>
     </div>
 
 </body>

@@ -44,24 +44,18 @@ body{
     padding-left: 10px;
 }
 /*estilos inicio de sesion*/
-.ingresar_texto{
-    width: 40%;
-    margin-left: 30%;
-}
 .texto_is{
-    font-style: oblique;
     color: #495057;
+    font-family: 'Lato', sans-serif; 
 }
-@media only screen and (min-width:0px) and (max-width:767px){
-    .ingresar_texto{
-        width: 100%;
-        margin-left: 0;
-    }
+.boton_is{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #39B6EC;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
 }
-@media only screen and (min-width:768px) and (max-width:999px){
-    .ingresar_texto{
-        width: 60%;
-        margin-left: 19%;
-    }
-}
-
