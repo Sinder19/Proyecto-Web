@@ -45,7 +45,7 @@ body{
 }
 /*estilos inicio de sesion*/
 .texto_is{
-    color: #495057;
+    color: black;
     font-family: 'Lato', sans-serif; 
 }
 .boton_is{
@@ -63,4 +63,12 @@ body{
 /*Estilos Registrarse*/
 .texto_registro{
     color: black;
+    text-align: center;
+}
+.texto_datos{
+    color: black;
+    text-align: left;
+}
+.borde_input{
+    border: black solid 1px;
 }
