@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Poleras</title>
     <!--Boostrap4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,7 +18,6 @@
     <link type="text/css" rel="stylesheet" href="Css/estilos.css">
     <!--Importe de los iconos para las redes sociales-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
 </head>
 
@@ -37,19 +36,18 @@
         <div class="collapse navbar-collapse" id="navb">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link item_select" href="Home.html">Inicio</a>
+                    <a class="nav-link color_letra" href="Home.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link color_letra" href="Quienes_somos.html">¿Quiénes somos?</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle color_letra" href="#" id="navbardrop" data-toggle="dropdown">
-                        Productos
+                    <a class="nav-link dropdown-toggle item_select" href="#" id="navbardrop" data-toggle="dropdown">
+                        Polerones
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="poleras.html">Poleras</a>
                         <a class="dropdown-item" href="#">Pantalones</a>
-                        <a class="dropdown-item" href="polerones.html">Polerones</a>
                     </div>
                 </li>
             </ul>
@@ -82,6 +80,126 @@
         </div>
     </nav>
     <!--Fin Barra Menu-->
+    
+    <!--Buscar-->
+    <form action="poleras.html" method="POST" name="buscar_polera" id="buscar_polera">
+        <div class="container">
+            <div class="row">
+                <input class="form-control mr-sm-2 buscar" type="text" placeholder="Ingresar Producto" style="margin-top: 1rem; margin-bottom: 1rem;">
+                <button class="btn btn-primary" style="border: #005BBC solid 1px; margin-top: 1rem; margin-bottom: 1rem;" type="submit">Buscar</button>
+            </div>
+        </div>
+    </form>
+
+    <!--Polerones-->
+    <div class="container">
+        <div class="row espacio_prod">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card">
+                        <img src="imagenes/poleron1.jpg" id="poleron1" alt="Poleron 1" style="width:100%" class="ajuste_fotos">
+                        <h1>Poleron Calvin Klein</h1>
+                        <p class="price">$7.500</p>
+                        <p>Polera Top Quality con estampado a serigrafia y tela prelavada</p>
+                        <p><button>Añadir al carrito</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card">
+                        <img src="imagenes/poleron2.jpg" id="poleron2" alt="Poleron 2" style="width:100%" class="ajuste_fotos">
+                        <h1>Poleron GAP</h1>
+                        <p class="price">$7.500</p>
+                        <p>Polera Top Quality con estampado a serigrafia y tela prelavada</p>
+                        <p><button>Añadir al carrito</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card">
+                        <img src="imagenes/poleron3.jpg" id="poleron3" alt="Poleron 3" style="width:100%" class="ajuste_fotos">
+                        <h1>Poleron Guess</h1>
+                        <p class="price">$7.500</p>
+                        <p>Polera Top Quality con estampado a serigrafia y tela prelavada</p>
+                        <p><button>Añadir al carrito</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row espacio_prod">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card">
+                        <img src="imagenes/poleron4.jpg" id="poleron4" alt="Poleron 4" style="width:100%" class="ajuste_fotos">
+                        <h1>Poleron Tommy Hilfiger</h1>
+                        <p class="price">$7.500</p>
+                        <p>Polera Top Quality con estampado a serigrafia y tela prelavada</p>
+                        <p><button>Añadir al carrito</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card">
+                        <img src="imagenes/poleron5.jpg" id="poleron5" alt="Poleron 5" style="width:100%" class="ajuste_fotos">
+                        <h1>Poleron Armani Exchange </h1>
+                        <p class="price">$7.500</p>
+                        <p>Polera Top Quality con estampado a serigrafia y tela prelavada</p>
+                        <p><button>Añadir al carrito</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card">
+                        <img src="imagenes/poleron6.jpg" id="poleron6" alt="Poleron 6" style="width:100%" class="ajuste_fotos">
+                        <h1>Poleron Tommy Hilfiger</h1>
+                        <p class="price">$7.500</p>
+                        <p>Polera Top Quality con estampado a serigrafia y tela prelavada</p>
+                        <p><button>Añadir al carrito</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row espacio_prod">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card">
+                        <img src="imagenes/poleron7.jpg" id="poleron7" alt="Poleron 7" style="width:100%" class="ajuste_fotos">
+                        <h1>Poleron GAP</h1>
+                        <p class="price">$7.500</p>
+                        <p>Polera Top Quality con estampado a serigrafia y tela prelavada</p>
+                        <p><button>Añadir al carrito</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card">
+                        <img src="imagenes/poleron8.jpg" id="poleron8" alt="Poleron 8" style="width:100%" class="ajuste_fotos">
+                        <h1>Poleron Guess</h1>
+                        <p class="price">$7.500</p>
+                        <p>Polera Top Quality con estampado a serigrafia y tela prelavada</p>
+                        <p><button>Añadir al carrito</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card">
+                        <img src="imagenes/poleron9.jpg" id="poleron9" alt="Poleron 9" style="width:100%" class="ajuste_fotos">
+                        <h1>Poleron GAP</h1>
+                        <p class="price">$7.500</p>
+                        <p>Polera Top Quality con estampado a serigrafia y tela prelavada</p>
+                        <p><button>Añadir al carrito</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Poleras-->
 
     <!--Inicio Pie de Página-->
     <footer class="bg-light text-center text-lg-start" style="margin-top: 50px;">
@@ -108,7 +226,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <div class="col-md-4">
                     <h5 class="text-uppercase mb-0" style="padding-bottom: 10px;">Redes Sociales</h5>
 
@@ -131,11 +249,10 @@
                             <p>Correo Electrónico: a.gonzalez3@duocuc.cl</p>
                         </li>
                     </ul>
+                </div>
             </div>
         </div>
-        </div>
-    </footer>   
+    </footer>
     <!--Fin Pie de Página-->
 </body>
-
 </html>
