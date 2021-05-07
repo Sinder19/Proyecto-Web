@@ -30,7 +30,6 @@
             //presione el submit
             $("#registrarse").submit(function () {
                 var mensaje = "Por favor revisar los siguientes detalles en el formulario: ";
-                var viv = $("#tipo_vivienda").val();
                 if ($("#nombre").val().trim().length == 0) {
                     mensaje = mensaje + "<br>El nombre no debe estar vacío";
                 }
@@ -42,11 +41,15 @@
                 }
                 if (isNaN($("#telefono").val())) {
                     mensaje = mensaje + "<br>El teléfono solo puede ser números";
-                } if ($("#telefono").val().trim().length == 0) {
+                } 
+                if ($("#telefono").val().trim().length == 0) {
                     mensaje = mensaje + "<br>El teléfono no debe estar vacío";
                 }
                 if ($("#contrasenia").val() != $("#contrasenia2").val()) {
                     mensaje = mensaje + "<br>Las contraseñas deben ser iguales";
+                }
+                if ($("#contrasenia").val().trim().length == 0){
+                    mensaje = mensaje + "<br>La contraseña no debe estar vacia";
                 }
                 if ($("#direccion").val().trim().length == 0) {
                     mensaje = mensaje + "<br>La dirección no debe estar vacío";
