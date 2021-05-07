@@ -73,7 +73,7 @@
                 if ($("#direccion_num").val().trim().length == 0) {
                     mensaje = mensaje + "<br>El numero de la direccion no debe estar vacío";
                 }
-                if ($("#check1").not(":checked")) {
+                if($("#check1").is(':not(:checked)')) {
                     mensaje = mensaje + "<br>Debe aceptar los términos y condiciones";
                 }
                 if (mensaje != "Por favor revisar los siguientes detalles en el formulario: ") {
@@ -209,9 +209,6 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div id="error" class="alert alert-danger"></div>
-                    </div>
-                    <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label texto_registro" for="check1"
                                 style="color: black; font-style: oblique;">
@@ -220,6 +217,9 @@
                                     servicio</a>
                             </label>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <div id="error" class="alert alert-danger"></div>
                     </div>
                     <div class="form-group" style="text-align: center;">
 
