@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesion</title>
+    <title>Registrarse</title>
 
     <!--Boostrap4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -21,10 +21,26 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#error").hide(); //ocultando el div de los errores
-            //$("#block").hide();
-            //$("#num_depto").hide();
-            //$("#block1").hide();
-            //$("#num_depto1").hide();
+            $("#block").hide();
+            $("#num_depto").hide();
+            $("#block1").hide();
+            $("#num_depto1").hide();
+
+            $("#tipo_vivienda").change(function () {
+                var dpto = $("#tipo_vivienda option:selected").text();
+                if (dpto == "Departamento") {
+                    $("#block").show();
+                    $("#num_depto").show();
+                    $("#block1").show();
+                    $("#num_depto1").show();
+                }
+                if (dpto == "Casa") {
+                    $("#block").hide();
+                    $("#num_depto").hide();
+                    $("#block1").hide();
+                    $("#num_depto1").hide();
+                }
+            });
 
             //Indicar que las validaciones del formulario se ejecutaran solo cuando se
             //presione el submit
@@ -41,14 +57,14 @@
                 }
                 if (isNaN($("#telefono").val())) {
                     mensaje = mensaje + "<br>El teléfono solo puede ser números";
-                } 
+                }
                 if ($("#telefono").val().trim().length == 0) {
                     mensaje = mensaje + "<br>El teléfono no debe estar vacío";
                 }
                 if ($("#contrasenia").val() != $("#contrasenia2").val()) {
                     mensaje = mensaje + "<br>Las contraseñas deben ser iguales";
                 }
-                if ($("#contrasenia").val().trim().length == 0){
+                if ($("#contrasenia").val().trim().length == 0) {
                     mensaje = mensaje + "<br>La contraseña no debe estar vacia";
                 }
                 if ($("#direccion").val().trim().length == 0) {
@@ -56,6 +72,9 @@
                 }
                 if ($("#direccion_num").val().trim().length == 0) {
                     mensaje = mensaje + "<br>El numero de la direccion no debe estar vacío";
+                }
+                if ($("#check1").not(":checked")) {
+                    mensaje = mensaje + "<br>Debe aceptar los términos y condiciones";
                 }
                 if (mensaje != "Por favor revisar los siguientes detalles en el formulario: ") {
                     $("#error").html(mensaje); //mostrando el texto de la variable en el div del html

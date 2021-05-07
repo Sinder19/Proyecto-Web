@@ -50,6 +50,12 @@
                 if ($("#comentario").val().trim().length == 0) {
                     mensaje = mensaje + "<br>El campo de comentario no debe estar vacío";
                 }
+                if ($("#regiones").val() == "sin-region"){
+                    mensaje = mensaje + "<br>Debe seleccionar una región"
+                }
+                if ($("#comunas").val() == "sin-comuna"){
+                    mensaje = mensaje + "<br>Debe seleccionar una comuna"
+                }
                 if (mensaje != "Por favor revisar los siguientes detalles en el formulario: ") {
                     $("#error").html(mensaje); //mostrando el texto de la variable en el div del html
                     $("#error").show(); //hace visible el div

@@ -2,7 +2,6 @@ body{
     background-image: url("http://itectehuacan.edu.mx/TutoriasFinalSistema/Imagenes/backgrounds/1.jpg");
 
 }
-
 /*NAV BAR COLORS*/
 .color_letra{
     color: #216DB4;
@@ -83,7 +82,15 @@ body{
     padding-right: 3%;
     padding-top: 1%;
 }
-
+.imagen{
+    max-width: 250px;
+    width: 100%;
+}
+iframe{
+    width: 100%;
+    max-width: 1100px;
+    height: 300px;
+}
 
 
 /*AJUSTES REDES SOCIALES Y PIES DE PAGINAS*/
@@ -121,7 +128,8 @@ body{
 }
 @media only screen and (max-width: 767px){
     .lados_pie_pag{
-        margin-top: 5px;
+        border-left: black solid 0px; 
+        border-right: black solid 0px;
     }
 }
 
