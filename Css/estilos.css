@@ -71,6 +71,9 @@ body{
 .borde_input{
     border: black solid 1px;
 }
+.g-recaptcha{
+    margin-bottom: 15px;
+}
 
 /*Quienes Somos Estilos*/
 .quienes_somos{
@@ -172,4 +175,8 @@ iframe{
 /*Estilos Contactanos*/
 .espaciado_superior{
     margin-top: 4%;
+}
+.espacios_input{
+    border: black solid 1px;
+    margin-bottom: 30px;
 }

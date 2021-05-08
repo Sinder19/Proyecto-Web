@@ -18,6 +18,8 @@
     <!--Importe de los estilos(css)-->
     <link type="text/css" rel="stylesheet" href="Css/estilos.css">
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <script type="text/javascript">
         $(document).ready(function () {
             $("#error").hide(); //ocultando el div de los errores
@@ -147,7 +149,6 @@
                     "comunas": ["Cerrillos", "Cerro Navia", "Conchalí", "El Bosque", "Estación Central", "Huechuraba", "Independencia", "La Cisterna", "La Florida", "La Granja", "La Pintana", "La Reina", "Las Condes", "Lo Barnechea", "Lo Espejo", "Lo Prado", "Macul", "Maipú", "Ñuñoa", "Pedro Aguirre Cerda", "Peñalolén", "Providencia", "Pudahuel", "Quilicura", "Quinta Normal", "Recoleta", "Renca", "San Joaquín", "San Miguel", "San Ramón", "Vitacura", "Puente Alto", "Pirque", "San José de Maipo", "Colina", "Lampa", "TilVl", "San Bernardo", "Buin", "Calera de Tango", "Paine", "Melipilla", "Alhué", "Curacaví", "María Pinto", "San Pedro", "Talagante", "El Monte", "Isla de Maipo", "Padre Hurtado", "Peñaflor"]
                 }]
             }
-
             jQuery(document).ready(function () {
 
                 var iRegion = 0;
@@ -334,8 +335,8 @@
                     <div class="form-group">
                         <div id="error" class="alert alert-danger"></div>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6LdnKMsaAAAAANS0vPbA_-cnQP3kNZoRhU6mjJQ2"></div>
                     <div class="form-group" style="text-align: center;">
-
                         <p><button type="submit" class="boton_is">Registrarse</button></p>
                         <p class="texto_is">———————————————— O ————————————————</p>
                         <a href="inicio_sesion.html" class="texto_is " style="font-style: oblique;"> Iniciar Sesión
