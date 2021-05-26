@@ -230,19 +230,6 @@ iframe{
     margin-bottom: 30px;
 }
 
-/*Estilos Carrito de Compras*/
-.shopping-cart {
-    width: 750px;
-    height: 423px;
-    margin: 80px auto;
-    background: #FFFFFF;
-    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
-    border-radius: 6px;
-   
-    display: flex;
-    flex-direction: column;
-}
-
 /*DETALLE PRODUCTO ESTILOS*/
 .img_detalle{
     width: 100%;
@@ -252,7 +239,7 @@ iframe{
 .img_detalle:hover {
     -ms-transform: scale(2);
     -webkit-transform: scale(2);
-    transform: scale(2); 
+    transform: scale(2);
 }
 .texto_detalle{
     font-family: 'Lato', sans-serif;
@@ -292,3 +279,24 @@ iframe{
         margin-top: 45px !important;
     }
 }
+
+/*Estilos Carrito de Compras*/
+.fondo_carrito{
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #555657 !important;
+    font-family: 'Lato', sans-serif !important;
+}
+.pagar {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 15px;
+} 
